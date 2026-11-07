@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OneDrive for Linux: free Microsoft OneDrive desktop app for Fedora, Ubuntu and Debian</title>
+  <meta name="description" content="OneDrive for Linux by Bhavesh Panchal: a free, open-source desktop app for Microsoft OneDrive on Linux. Work and personal accounts, Office documents, downloads with progress. RPM, DEB and AppImage.">
+  <meta name="keywords" content="onedrive for linux, microsoft onedrive linux, onedrive linux app, onedrive desktop linux, onedrive fedora, onedrive ubuntu, sharepoint linux, office 365 files linux, bhavesh panchal">
+  <meta name="author" content="Bhavesh Panchal">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://bhavesh-panchal.github.io/onedrive-for-linux/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OneDrive for Linux">
+  <meta property="og:title" content="OneDrive for Linux: free Microsoft OneDrive desktop app for Fedora, Ubuntu and Debian">
+  <meta property="og:description" content="OneDrive for Linux by Bhavesh Panchal: a free, open-source desktop app for Microsoft OneDrive on Linux. Work and personal accounts, Office documents, downloads with progress. RPM, DEB and AppImage.">
+  <meta property="og:url" content="https://bhavesh-panchal.github.io/onedrive-for-linux/">
+  <meta property="og:image" content="https://bhavesh-panchal.github.io/onedrive-for-linux/icon-512.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OneDrive for Linux: free Microsoft OneDrive desktop app for Fedora, Ubuntu and Debian">
+  <meta name="twitter:description" content="OneDrive for Linux by Bhavesh Panchal: a free, open-source desktop app for Microsoft OneDrive on Linux. Work and personal accounts, Office documents, downloads with progress. RPM, DEB and AppImage.">
+  <meta name="twitter:image" content="https://bhavesh-panchal.github.io/onedrive-for-linux/icon-512.png">
+  <meta name="theme-color" content="#0b8fd8">
+  <link rel="icon" type="image/png" href="icon-64.png">
+  <link rel="apple-touch-icon" href="icon-512.png">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "OneDrive for Linux",
+      "alternateName": [
+        "OneDrive Linux",
+        "OneDrive for Linux desktop"
+      ],
+      "description": "OneDrive for Linux by Bhavesh Panchal: a free, open-source desktop app for Microsoft OneDrive on Linux. Work and personal accounts, Office documents, downloads with progress. RPM, DEB and AppImage.",
+      "url": "https://bhavesh-panchal.github.io/onedrive-for-linux/",
+      "downloadUrl": "https://github.com/Bhavesh-Panchal/onedrive-for-linux/releases/latest",
+      "installUrl": "https://github.com/Bhavesh-Panchal/onedrive-for-linux/releases/latest",
+      "codeRepository": "https://github.com/Bhavesh-Panchal/onedrive-for-linux",
+      "softwareVersion": "0.3.0",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Linux",
+      "processorRequirements": "x86_64, arm64",
+      "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "image": "https://bhavesh-panchal.github.io/onedrive-for-linux/icon-512.png",
+      "author": {
+        "@type": "Person",
+        "name": "Bhavesh Panchal",
+        "url": "https://github.com/Bhavesh-Panchal"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Bhavesh Panchal",
+        "url": "https://github.com/Bhavesh-Panchal"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is there a OneDrive app for Linux?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Microsoft does not publish one. OneDrive for Linux is a free, open-source desktop app by Bhavesh Panchal that runs OneDrive on the web in its own window, with Linux desktop integration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it sync my files to disk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It is the OneDrive web client in a desktop window. For folder sync use abraunegg/onedrive or rclone; both work alongside this app."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I open Word, Excel and PowerPoint files?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Documents open in Office on the web, in an app window or in your browser. \"Open in desktop app\" links (ms-word:, ms-excel:, ms-powerpoint:) also open in Office on the web."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work with work and personal accounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Work or school accounts (your organisation's SharePoint OneDrive) and personal accounts both work, side by side with profiles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it official or safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is unofficial and not affiliated with Microsoft. It keeps Electron's sandbox on, sends no telemetry, and its source is public on GitHub."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body style="--accent: #0b8fd8">
+  <header class="hero">
+    <img src="icon-512.png" width="128" height="128" alt="OneDrive for Linux icon">
+    <h1>OneDrive for Linux</h1>
+    <p class="tagline">Microsoft OneDrive as a desktop app on Linux: your files, shared folders and Office documents in their own window.</p>
+    <p class="actions">
+      <a class="button primary" href="https://github.com/Bhavesh-Panchal/onedrive-for-linux/releases/latest" id="download">Download for Linux</a>
+      <a class="button" href="https://github.com/Bhavesh-Panchal/onedrive-for-linux">View on GitHub</a>
+    </p>
+    <p class="meta">Free and open source (GPL-3.0) · x86_64 and arm64 · RPM, DEB, AppImage, tar.gz · by <a href="https://github.com/Bhavesh-Panchal" rel="author">Bhavesh Panchal</a></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>OneDrive on Linux, as a real desktop app</h2>
+      <p>Microsoft does not make a OneDrive app for Linux. OneDrive for Linux puts OneDrive on the web in a proper desktop window, opens Word, Excel and PowerPoint documents in Office on the web, and shows downloads with progress, for work and personal accounts.</p>
+      <ul class="features">
+        <li><strong>Accounts:</strong> work or school (<code>onedrive.cloud.microsoft</code>, which opens your organisation's OneDrive) and personal (<code>onedrive.live.com</code>); run both at once with profiles.</li>
+        <li><strong>Office documents:</strong> Word, Excel and PowerPoint open in Office on the web, in an app window or in your browser (<code>officeLinks.openIn</code>).</li>
+        <li><strong>&quot;Open in desktop app&quot; links</strong> (<code>ms-word:</code>, <code>ms-excel:</code>, <code>ms-powerpoint:</code> and other Office schemes) open the document in Office on the web, since Linux has no Office desktop app.</li>
+        <li><strong>Downloads</strong> with progress on the taskbar and a notification when done.</li>
+        <li><strong>Uploads</strong> by drag and drop or the file picker, as on the web.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Install OneDrive for Linux</h2>
+      <p>Download the package for your system from the <a href="https://github.com/Bhavesh-Panchal/onedrive-for-linux/releases/latest">latest release</a>, then:</p>
+      <table>
+        <thead><tr><th>Distribution</th><th>Command</th></tr></thead>
+        <tbody>
+          <tr><td>Fedora, RHEL, openSUSE</td><td><code>sudo dnf install ./onedrive-for-linux-*.x86_64.rpm</code></td></tr>
+          <tr><td>Ubuntu, Debian, Linux Mint</td><td><code>sudo apt install ./onedrive-for-linux_*_amd64.deb</code></td></tr>
+          <tr><td>Any distribution (AppImage)</td><td><code>chmod +x onedrive-for-linux-*.AppImage &amp;&amp; ./onedrive-for-linux-*.AppImage</code></td></tr>
+          <tr><td>Any distribution (tar.gz)</td><td>extract, then run <code>./onedrive-for-linux</code></td></tr>
+        </tbody>
+      </table>
+      <p>Every release lists SHA-256 checksums: <code>sha256sum -c SHA256SUMS --ignore-missing</code>.</p>
+    </section>
+
+    <section>
+      <h2>Secure by design</h2>
+      <ul class="features">
+        <li>Electron's sandbox and context isolation stay on for every window; pages cannot reach Node.js.</li>
+        <li>Permissions (notifications, clipboard) only for Microsoft's own pages.</li>
+        <li>Hardened binary: no <code>ELECTRON_RUN_AS_NODE</code>, <code>NODE_OPTIONS</code>, <code>--inspect</code> or remote debugging; sign-in cookies encrypted with your desktop keyring.</li>
+        <li>No telemetry or tracking added by the app. <a href="https://github.com/Bhavesh-Panchal/onedrive-for-linux/blob/main/PRIVACY.md">Privacy statement</a>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+      <details>
+        <summary>Is there a OneDrive app for Linux?</summary>
+        <p>Microsoft does not publish one. OneDrive for Linux is a free, open-source desktop app by Bhavesh Panchal that runs OneDrive on the web in its own window, with Linux desktop integration.</p>
+      </details>
+      <details>
+        <summary>Does it sync my files to disk?</summary>
+        <p>No. It is the OneDrive web client in a desktop window. For folder sync use <a href="https://github.com/abraunegg/onedrive">abraunegg/onedrive</a> or <a href="https://rclone.org/onedrive/">rclone</a>; both work alongside this app.</p>
+      </details>
+      <details>
+        <summary>Can I open Word, Excel and PowerPoint files?</summary>
+        <p>Yes. Documents open in Office on the web, in an app window or in your browser. "Open in desktop app" links (ms-word:, ms-excel:, ms-powerpoint:) also open in Office on the web.</p>
+      </details>
+      <details>
+        <summary>Does it work with work and personal accounts?</summary>
+        <p>Yes. Work or school accounts (your organisation's SharePoint OneDrive) and personal accounts both work, side by side with profiles.</p>
+      </details>
+      <details>
+        <summary>Is it official or safe?</summary>
+        <p>It is unofficial and not affiliated with Microsoft. It keeps Electron's sandbox on, sends no telemetry, and its source is public on GitHub.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>Also by Bhavesh Panchal</h2>
+      <p><a href="https://bhavesh-panchal.github.io/outlook-for-linux/"><strong>Outlook for Linux</strong></a>: the same desktop shell for Outlook.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ for the Linux community by <a href="https://github.com/Bhavesh-Panchal">Bhavesh Panchal</a>.</p>
+    <p class="small">OneDrive for Linux is an unofficial project, not affiliated with or endorsed by Microsoft. Microsoft, Outlook and OneDrive are trademarks of Microsoft Corporation.</p>
+  </footer>
+
+  <script src="download.js" defer></script>
+</body>
+</html>
