@@ -1,5 +1,6 @@
 # OneDrive for Linux
 
+![CI](https://github.com/Bhavesh-Panchal/onedrive-for-linux/actions/workflows/ci.yml/badge.svg)
 ![Release](https://img.shields.io/github/v/release/Bhavesh-Panchal/onedrive-for-linux?style=flat&label=release)
 ![Downloads](https://img.shields.io/github/downloads/Bhavesh-Panchal/onedrive-for-linux/total.svg?style=flat)
 ![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg?style=flat)
