@@ -113,6 +113,7 @@ Example `~/.config/onedrive-for-linux/config.json`:
 | `network.authServerAllowlist` | – | Hosts allowed for Kerberos/NTLM (Chromium --auth-server-allowlist) |
 | `network.allowInsecureHttp` | `false` | Treat http:// app hosts as trusted (testing only) |
 | `network.userAgent` | – | User agent override |
+| `network.browserBrand` | `"chrome"` | Browser brand reported to the web app. "chrome" enables features Microsoft shows only to Chrome (e.g. Copilot in Outlook) (`chrome`, `chromium`) |
 | `performance.disableGpu` | `false` | Disable hardware acceleration |
 | `logging.level` | `"info"` | Console log level (`error`, `warn`, `info`, `debug`) |
 | `officeLinks.openIn` | `"app"` | Where Office documents open: an app window, or the system browser (`app`, `browser`) |
@@ -136,6 +137,7 @@ Per-profile settings go under `"profiles"` in `config.json`:
 | Problem | Try |
 |---|---|
 | Something also fails in a browser | Open https://onedrive.live.com in Firefox or Chrome. If it fails there too, it is a Microsoft issue; report it to Microsoft. |
+| Copilot or other Microsoft features missing | The app reports itself as Google Chrome (`network.browserBrand: "chrome"`, the default), because Microsoft shows some features only to Chrome. Your organisation must also have them enabled. |
 | Text looks bolder than in Firefox | Default is grayscale text (`appearance.fontAntialiasing: "grayscale"`). Set `"system"` to follow your desktop setting. |
 | Old icon in the menu or tray after an update | KDE: `rm ~/.cache/icon-cache.kcache && systemctl --user restart plasma-plasmashell.service`, or log out and back in. |
 | Blank or flickering window | Start with `--performance.disableGpu`. |
