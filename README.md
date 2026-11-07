@@ -21,24 +21,19 @@
 
 ## Installation
 
-### Fedora / RHEL (RPM)
+Download from [Releases](https://github.com/Bhavesh-Panchal/onedrive-for-linux/releases/latest). Every release has packages for **x86_64** and **arm64**:
 
-Download the latest `.rpm` from [Releases](https://github.com/Bhavesh-Panchal/onedrive-for-linux/releases/latest), then:
+| Distribution | Package | Install |
+|---|---|---|
+| Fedora, RHEL, openSUSE | `.rpm` (`x86_64`, `aarch64`) | `sudo dnf install ./onedrive-for-linux-*.x86_64.rpm` |
+| Debian, Ubuntu, Mint | `.deb` (`amd64`, `arm64`) | `sudo apt install ./onedrive-for-linux_*_amd64.deb` |
+| Any distribution | `.AppImage` | `chmod +x onedrive-for-linux-*.AppImage && ./onedrive-for-linux-*.AppImage` |
+| Any distribution | `.tar.gz` | extract, then run `./onedrive-for-linux` |
 
-```bash
-sudo dnf install ./onedrive-for-linux-*.x86_64.rpm
-```
+Verify a download with `sha256sum -c SHA256SUMS --ignore-missing`. Flatpak and Snap are planned.
 
-Remove it again with `sudo dnf remove onedrive-for-linux`.
-
-### Other formats
-
-| Format | Status |
-|---|---|
-| RPM (Fedora, RHEL, openSUSE) | ✅ Available |
-| DEB (Debian, Ubuntu) | 🔨 Build from source: `npm run package:deb` |
-| AppImage | 🔨 Build from source: `npm run package:appimage` |
-| Flatpak / Snap | 📋 Planned |
+> [!TIP]
+> For AppImages, [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) adds menu entries and handles updates.
 
 ## Quick Start
 
@@ -168,6 +163,7 @@ npm start            # run from source
 npm run check        # lint + unit tests
 npm run smoke        # launch against a local test page and check the shell
 npm run package:rpm  # dist/onedrive-for-linux/onedrive-for-linux-<version>.x86_64.rpm
+npm run package:all  # every format for x86_64 and arm64
 ```
 
 | Path | Contents |
