@@ -13,7 +13,7 @@ module.exports = {
   id: "onedrive-for-linux",
   name: "OneDrive for Linux",
   title: "OneDrive",
-  description: "Unofficial OneDrive on the web desktop client for Linux (no file sync)",
+  description: pkg.description,
   version: pkg.version,
   homepage: pkg.homepage,
   bugs: pkg.bugs?.url,
