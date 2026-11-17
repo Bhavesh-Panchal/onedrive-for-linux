@@ -1,6 +1,6 @@
 {
   "name": "onedrive-for-linux",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "private": true,
   "description": "Unofficial Microsoft OneDrive client for Linux using Electron. It uses the OneDrive web app and wraps it as a standalone desktop application (no file sync).",
   "license": "GPL-3.0-or-later",
@@ -38,13 +38,14 @@
   "devDependencies": {
     "@electron/fuses": "2.1.3",
     "@eslint/js": "^10.0.1",
-    "electron": "44.10.2",
+    "electron": "44.11.3",
     "electron-builder": "26.18.1",
     "eslint": "^10.14.0",
     "globals": "^17.13.0"
   },
   "overrides": {
-    "minimatch@>=7.0.0 <11.0.1": "^11.0.1"
+    "minimatch@>=7.0.0 <11.0.1": "^11.0.1",
+    "@electron/universal": "^3.0.6"
   },
   "engines": {
     "node": ">=22"
